@@ -1,0 +1,17 @@
+header {
+	height: 40px;
+	width: 1024px;
+	line-height: 40px;
+	background: #481c87;
+}
+
+header h1{
+	margin: 0;
+	border: 0;
+	padding: 0;	
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	white-space: nowrap;
+	color: #FFFFFF;
+}

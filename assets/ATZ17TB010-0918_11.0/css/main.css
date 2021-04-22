@@ -1,0 +1,468 @@
+@import url("reset.css");
+@import url("font.css");
+@import url("contents.css");
+@import url("header.css");
+@import url("footer.css");
+
+/** global styles **/
+body {
+	font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino kaku Gothic ProN';
+	font-size: 16pt;
+	line-height: 25pt;
+	color: #fff;
+	background: #000 url(../img/bg_body@2x.jpg) no-repeat left top;
+	background-size: 1024px 768px;
+	font-feature-settings : "palt";
+	-webkit-font-feature-settings : "palt";
+}
+
+img {
+	vertical-align: bottom;
+}
+
+ul,li {
+	list-style: none;
+}
+
+sup {
+    height: 0;
+    line-height: 1;
+    vertical-align: baseline;
+    position: relative;
+}
+
+sup { bottom: .5ex; }
+sup.smaller { bottom: .8em; font-size: .5em; }
+sup.ssmaller {
+	bottom: 1ex;
+	font-size: .6em;
+}
+
+img.char {
+	padding: 0 2px;
+	vertical-align: baseline;
+}
+
+#wrapper{
+	display:block;
+	width: 1024px;
+	height: 768px;
+	position:relative;
+	overflow:hidden;
+}
+
+#content-wrapper {
+	display: block;
+	width: 1024px;
+	height: 682px;
+	position: absolute;
+	top: 40px;
+	left: 0px;
+}
+
+#content {
+	display: block;
+	width: 930px;
+	height: 600px;
+	position: absolute;
+	top: 62px;
+	left: 60px;
+}
+
+header > h1 > img {
+	height: 40px;
+	width: 130px;
+}
+
+/** img **/
+figure {
+	display: block;
+	text-align: center;
+}
+
+figure img {
+	display: block;
+}
+
+figure legend {
+	width: 100%;
+	font-size: 8pt;
+	line-height: 12pt;
+	padding: 3px 0;
+}
+
+/** subheads **/
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'ヒラギノ角ゴ ProN W6', 'Hiragino kaku Gothic ProN';
+	font-weight: bold;
+	font-size: 18pt;
+	line-height: 24pt;
+	margin-bottom:0.8em;
+}
+
+/** index **/
+.page_index {
+	background-image: url(../img/btn_TOC_EngagementButton_48px@2x.png);
+	background-size: 298px 48px;
+	width: 298px;
+	height: 48px;
+	color: #fff;
+	line-height: 48px;
+	display: inline-block;
+	overflow: hidden;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.page_index span {
+	padding-left: 15px;
+	height: 100%;
+}
+
+/** study **/
+ {
+	width: 100px;
+	height: 44px;
+	display: inline-block;
+}
+
+.btn_study i {
+	background-repeat: no-repeat;
+	background-image: url(../img/btn_StudyDesign_JP@2x.png);
+	background-size: 100px 22px;
+	background-position: 0 11px;
+	display: inline-block;
+	width: 100px;
+	height: 44px;
+}
+
+/** reveal **/
+/** refresh **/
+/** tip **/
+.btn_reveal,
+.btn_refresh,
+.btn_tip {
+	width: 44px;
+	height: 44px;
+	display: inline-block;
+}
+
+.btn_reveal i,
+.btn_refresh i,
+.btn_tip i {
+	background-repeat: no-repeat;
+	background-size: 22px 22px;
+	background-position: 11px 11px;
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+}
+
+/** reveal **/
+.btn_reveal i {
+	background-image: url(../img/btn_ContentRevealButton@2x.png);
+}
+
+/** refresh **/
+.btn_refresh i {
+	background-image: url(../img/btn_RefreshButton@2x.png);
+}
+
+/** tip **/
+.btn_tip i {
+	background-image: url(../img/btn_RepTip_Icon@2x.png);
+}
+
+/** previous **/
+/** next **/
+/** enter **/
+.btn_prev,
+.btn_next,
+.btn_enter {
+	width: 61px;
+	height: 44px;
+	display: inline-block;
+}
+
+.btn_prev i,
+.btn_next i,
+.btn_enter i {
+	background-repeat: no-repeat;
+	background-size: 61px 22px;
+	background-position: 0px 11px;
+	display: inline-block;
+	width: 61px;
+	height: 44px;
+}
+
+
+/** previous **/
+.btn_prev i {
+	background-image: url(../img/btn_Previous_Button@2x.png);
+}
+
+/** next **/
+.btn_next i {
+	background-image: url(../img/btn_Next_Button@2x.png);
+}
+
+/** enter **/
+.btn_enter i {
+	background-image: url(../img/btn_Submit_Button@2x.png);
+}
+
+
+/** grid **/
+.grid-container { }
+
+.grid-item {
+	float: left;
+	margin-left:18px;
+
+	height: 600px;
+}
+
+.grid-item:first-of-type {
+	margin-left:0;
+}
+
+.gridsize1 {
+	width: 140px;
+}
+
+.gridsize2 {
+	width: 298px;
+}
+
+.gridsize3 {
+	width: 456px;
+}
+
+.gridsize4 {
+	width: 614px;
+}
+
+.gridsize5 {
+	width: 772px;
+}
+
+/** navigation **/
+nav ul{
+	display:block;
+	list-style:none;
+	height:40px;
+	margin:0px 0 0 0;
+	padding:0;
+}
+
+nav ul li{
+    margin-top: 1px;
+    margin-right: 1px;
+    height: 40px;
+    width: 157px;
+    float: left;
+    cursor: pointer;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-pack: center;
+	box-pack: center;
+	-webkit-box-align: center;
+	box-align: center;
+    font-size: 16px;
+	line-height: 18px;
+    text-align: center;
+	color: rgb(68, 68, 68);
+	background-color:rgb(204, 204, 204);
+	white-space: nowrap;
+	font-feature-settings : "palt";
+	-webkit-font-feature-settings : "palt";
+}
+nav ul li:first-of-type {
+	width: 200px;
+    cursor: default;
+	color: rgb(255, 255, 255);
+	background-color:rgb(102, 102, 102);
+}
+
+nav ul li.active{
+	color: rgb(255, 255, 255);
+	background-color: #481c87;
+}
+
+nav ul li.new_btn {
+    background-image: url(../img/specific/new_btn.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+/** ナビゲーション文字長体 */
+nav ul li .narrow_item_01 {
+	margin-left: 1px;
+	display: inline-block;
+	-webkit-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+	-webkit-transform: scaleX(.89);
+	transform: scaleX(.89);
+}
+
+nav ul li .narrow_item_02 {
+	display: inline-block;
+	-webkit-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+	-webkit-transform: scaleX(.8);
+	transform: scaleX(.8);
+}
+
+/**
+ * main
+ */
+
+#content.on {
+	display: none;
+}
+
+#content .content_heading {
+	margin: 6px 0 0 35px;
+    border-bottom: 2px solid #fff;
+    position: relative;
+    height: 77px;
+    width: 860px;
+    font-size: 30px;
+    line-height: 52px;
+    font-weight: bold;
+    color: #fff;
+	text-shadow: 0 0 3px rgba(0,0,0,.7);
+}
+
+#content .content_heading .heading_inner {
+	width: 100%;
+	padding-bottom:0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    box-sizing: border-box;
+}
+
+#content .content_heading .front_tag {
+    margin-right: 8px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 5px 7px;
+    height: 33px;
+    position: relative;
+    top: -3px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+/** 出典 */
+.note {
+    position: absolute;
+    right: 0;
+    bottom: -9px;
+    font-size: 9px;
+    color: #fff;
+    text-align: right;
+    white-space: nowrap;
+}
+
+/** popup **/
+.popup_container{
+	position: absolute;
+	display : block;
+	padding : 20px 10px 20px 30px;
+	margin: 0 auto;
+	border-radius: 8px;
+	box-shadow: 0px 2px 8px rgba(0,0,0,0.6);
+	background-color: #fff;
+	overflow: hidden;
+	display: none;
+}
+
+.popup-contents {
+	background-color: #fff;
+	padding:0;
+}
+
+.popup_container .close_button{
+	background-image: url(../img/btn_close@2x.png);
+	background-size: 22px 22px;
+	background-position: 11px 11px;
+	background-repeat: no-repeat;
+	width: 44px;
+	height: 44px;
+	cursor: pointer;
+	float: right;
+	margin-right: -30px; /* same as .popup_container -> padding-right */
+	margin-top: -20px; /* same as .popup_container -> padding-top */
+}
+
+.scroller {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.scroller:before {
+	width: 144px;
+	height: 32px;
+	background-image: url(../img/btn_ScrollToEnd@2x.png);
+	background-size: 144px 32px;
+	display: block;
+	margin: 5px 10px 0px auto;
+	content: " ";
+}
+
+.scroller::-webkit-scrollbar {
+ -webkit-appearance: none;
+ width: 10px;
+}
+ 
+.scroller::-webkit-scrollbar-track {
+ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+ -webkit-border-radius: 8px;
+ border-radius: 8px;
+}
+ 
+.scroller::-webkit-scrollbar-thumb {
+ -webkit-border-radius: 8px;
+ border-radius: 8px;
+ background-color: rgba(0,0,0,.5);
+ -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+ box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.popup-contents {
+	max-height: 600px;
+}
+
+.popup-contents ol {
+	list-style-type: decimal;
+	padding-left: 30px;
+}
+
+/** page navigation **/
+
+#btn_prev,
+#btn_next {
+	height: 44px;
+	width: 44px;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	top: 339px;
+}
+
+#btn_prev {
+	background: url(../img/btn_NavigationalLink_Button2@2x.png) no-repeat 11px 10px;
+	background-size: 22px 22px;
+	left: 0px;
+}
+
+#btn_next {
+	background: url(../img/btn_NavigationalLink_Button@2x.png) no-repeat 11px 12px;
+	background-size: 22px 22px;
+	right: 0px;
+}

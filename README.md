@@ -1,4 +1,4 @@
-# broad-boilerplate
+# etude-playwright
 
 <!-- Badges -->
 [![Bump Version](https://github.com/shin-sforzando/broad-boilerplate/workflows/Bump%20Version/badge.svg)](https://github.com/shin-sforzando/broad-boilerplate/actions?query=workflow:%22Bump+Version%22)
@@ -11,7 +11,7 @@
 |Screenshot 1|Screenshot 2|
 
 <!-- Synopsis -->
-GitHub Template Repository for General Use.
+Capture local html.
 
 <!-- TOC -->
 - [Prerequisites](#prerequisites)
@@ -30,11 +30,9 @@ GitHub Template Repository for General Use.
 
 ## Prerequisites
 
-- A (Version x.y.z or higher)
-  - B
-  - C
-- D
-  - E
+- Docker
+- Python (Version 3.8.8 or higher)
+  - [playwright-python](https://github.com/microsoft/playwright-python) (Version 1.10.0 or higher)
 
 ## How to
 
@@ -48,10 +46,7 @@ renew                転生
 shell                接続
 logs                 記録
 follow               追跡
-open                 閲覧
-hide                 秘匿
-reveal               暴露
-deploy               配備
+start                開始
 stop                 停止
 down                 削除
 clean                掃除
@@ -62,7 +57,7 @@ help                 助言
 ### Setup
 
 ```shell
-(T. B. D.)
+make up
 ```
 
 ### Develop
@@ -74,7 +69,7 @@ help                 助言
 ### Run
 
 ```shell
-(T. B. D.)
+make start
 ```
 
 ### Lint
@@ -113,4 +108,4 @@ See [LICENSE](LICENSE).
 
 ### Contributors
 
-- [Shin'ichiro Suzuki](https://github.com/shin-sforzando)
+- [Tomoya Kashimada](https://github.com/tomoya-sforzando)

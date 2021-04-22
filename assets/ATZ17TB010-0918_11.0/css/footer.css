@@ -1,0 +1,80 @@
+footer{
+	border-top: 1px solid #767676;
+	width: 1024px;
+	height: 45px;
+	display: block;
+	position: absolute;
+	background: #242424;
+	left: 0px;
+	bottom: 0px;
+}
+
+footer ul{
+	width: 100%;
+	position: relative;
+	height: 46px;
+	overflow: hidden;
+}
+
+footer ul li{
+	list-style: none;
+	cursor: pointer;
+
+	float: left;
+	width: 25%;
+	height: 46px;
+	line-height: 46px;
+	position: absolute;
+
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+footer ul li:nth-of-type(1){ left: 50px; }
+footer ul li:nth-of-type(2){ right: 20px; }
+
+.footer_container .footer_btn {
+	width: 100%;
+	font-size: 15px;
+	line-height: 46px;
+	text-decoration: none;
+	color: #D9D9D9;
+}
+
+.footer--btn_references i,
+.footer--btn_definitions i,
+.footer--btn_top i,
+.footer--btn_information i {
+	background-size: 46px 46px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+}
+
+.footer--btn_references i {
+	background-image: url("../../img/global_img/btn_references@2x.png");
+}
+
+.footer--btn_definitions i {
+	background-image: url("../../img/global_img/btn_definitions@2x.png");
+}
+
+.footer--btn_top i {	
+	width: 75px;
+	height: 45px;
+	background-size: 75px 45px;
+	background-position: center center;
+	background-image: url("../img/btn_topPage@2x.png");
+}
+
+.footer--btn_information i {
+	width: 138px;
+	height: 45px;	
+	background-size: 138px 45px;
+	background-position: center center;
+	background-image: url("../img/btn_drugInformation@2x.png");
+}
+
+

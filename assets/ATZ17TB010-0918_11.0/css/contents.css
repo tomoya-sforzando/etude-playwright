@@ -1,0 +1,41 @@
+.sample_text {
+	padding: 5px;
+}
+
+.sample_img {
+	position: relative;
+	width: 200px;
+	float: left;
+	margin: 10px 10px;
+}
+
+.sample_grid-gray {
+	background-color: rgb(224, 224, 224);
+}
+
+.sample_grid-short {
+	height: 300px;
+}
+
+.sample_interaction {
+	border-radius: 4px;
+	height: 48px;
+	line-height: 48px;
+	padding-left: 15px;
+	background-color: rgb(224, 224, 224);
+	margin-bottom: 10px;
+}
+
+.sample_interaction .btn_reveal {
+	float: right;
+	margin: 2px;
+	margin-bottom: 10px;
+}
+
+[data-popup=true] {
+	cursor: pointer;
+}
+
+#references_popup .popup-contents {
+	max-height: 560px;
+}

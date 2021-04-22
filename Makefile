@@ -30,20 +30,20 @@ logs: ## 記録
 follow: ## 追跡
 	$(CMD_DOCKER_COMPOSE) logs ${ARGS} --timestamp --follow
 
-open: ## 閲覧
-	open ${PREVIEW_URL}
+# open: ## 閲覧
+# 	open ${PREVIEW_URL}
 
-hide: ## 秘匿
-	git secret hide -v
+# hide: ## 秘匿
+# 	git secret hide -v
 
-reveal: ## 暴露
-	git secret reveal -v
+# reveal: ## 暴露
+# 	git secret reveal -v
 
 # build: up ## 構築
 # 	$(CMD_DOCKER_COMPOSE) exec ${ARGS} $(MAIN_CONTAINER_APP) yarn build
 
-# start: build ## 開始
-# 	$(CMD_DOCKER_COMPOSE) exec ${ARGS} --detach $(MAIN_CONTAINER_APP) yarn start
+start: up ## 開始
+	$(CMD_DOCKER_COMPOSE) exec ${ARGS} $(MAIN_CONTAINER_APP) python main.py
 
 # lint: up ## 検証
 # 	$(CMD_DOCKER_COMPOSE) exec ${ARGS} $(MAIN_CONTAINER_APP) yarn lint
@@ -57,8 +57,8 @@ reveal: ## 暴露
 # generate: up ## 生成
 # 	$(CMD_DOCKER_COMPOSE) exec ${ARGS} $(MAIN_CONTAINER_APP) yarn generate
 
-deploy: generate ## 配備
-	echo "TODO: Not Implemented Yet!"
+# deploy: generate ## 配備
+# 	echo "TODO: Not Implemented Yet!"
 
 stop: ## 停止
 	$(CMD_DOCKER_COMPOSE) stop ${ARGS}
